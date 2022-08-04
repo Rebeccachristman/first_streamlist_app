@@ -46,8 +46,7 @@ try:
     back_from_functin = get_fruityvice_data(fruit_choice)
    # put the flattened json into a pandas dataframe
     streamlit.dataframe(back_from_function)
-
-except URLERROR as e:
+except URLError as e:
     streamlit.error()
     
 streamlit.stop()
