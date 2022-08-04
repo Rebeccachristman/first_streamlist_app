@@ -43,7 +43,7 @@ try:
   if not fruit_choice:
       streamlit.error("Please select a fruit to get information.")
   else:
-    back_from_functin = get_fruityvice_data(fruit_choice)
+    back_from_function = get_fruityvice_data(fruit_choice)
    # put the flattened json into a pandas dataframe
     streamlit.dataframe(back_from_function)
 except URLError as e:
